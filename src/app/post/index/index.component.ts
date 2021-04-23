@@ -19,4 +19,13 @@ export class IndexComponent implements OnInit {
     })  
   }
 
+    deletePost(id){
+
+       this.postService.delete(id).subscribe(res=>{
+         this.posts = this.posts.filter(item=>item.id!==id);
+         console.log("post deleted successfully");
+       })
+
+
+    }
 }

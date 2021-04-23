@@ -46,6 +46,14 @@ export class PostService {
    }           
 
 
+   //delete the code 
+
+   delete(id){
+    return this.httpClient.delete<Post>(this.apiUrl + '/posts/' + id)
+    .pipe(
+      catchError(this.errorHandler)
+    )
+  }
         //handling  error message elements
               errorHandler(error) {
                 let errorMessage = '';

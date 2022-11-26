@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "crudrestapi": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "crudrestapi"
+    }
+  },
+  "defaultProject": "crudrestapi",
+  "cli": {
+    "analytics": "7624c456-e726-4852-99ea-e98962619518"
+  }
 }
